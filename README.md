@@ -8,9 +8,6 @@ This paper introduces GED (Preference Graph Ensemble and Denoise), a method desi
 
 
 
-
-
-
 ## Setup
 
 Install all required dependencies to ensure all scripts function correctly.
@@ -30,11 +27,11 @@ python rank_gen.py \
     --rank_type $rank_type
 ```
 
-```bash
-python result_gen.py \
-    --w_type $w_type \
-    --task_name $task_name \
-    --answer_model $answer_model
-```
 
+- `--eval_model`: The model used for evaluation.  (Like: 'llama3-8b').
+- `--answer_model`: The model generating the answers.  (Like: 'qwen1.5-32b').
+- `--task_name`: The task for evaluation. (Like: '10k-ultra').
+- `--rank_type`: The ranking method. (Like: 'pairwise_majority').
+- `--ensemble_type`: The type of ensemble method used. (Like: 'graph_ensemble').
 
+This script generates updated rankings, denoising conflicting evaluations from the weak evaluators to produce reliable results.
