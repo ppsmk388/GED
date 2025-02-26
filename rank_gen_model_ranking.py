@@ -14,7 +14,7 @@ from tool import *
 
 def list_update(method, ensemble_type,  eval_model=None, all_model_list=None, rank_type=None, super_method=None, w_type=None, rank_list_result_save=None):
 
-    data_save_path = './DGG_t/model_rank_raw_save/same_id_same_question/processed_data'
+    data_save_path = './xxx/model_rank_raw_save/same_id_same_question/processed_data'
 
     # ----------------------------------------------------------------
     # 1. HELPER: Load model data from disk
