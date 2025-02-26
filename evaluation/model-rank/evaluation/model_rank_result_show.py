@@ -93,7 +93,7 @@ def main():
     # Path for storing combined ranking results
     combine_json_path = (
         f'{"your result save path"}/rank_ensemble/universalizing-weak-supervision'
-        f'{"your result save path"}//synthetic/ModelRanking/baseline_combine_rank_save.json'
+        f'{"your result save path"}/synthetic/ModelRanking/baseline_combine_rank_save.json'
     )
 
     # Ensure the folder for storing combined results exists

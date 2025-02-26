@@ -132,7 +132,7 @@ def get_reference_output(instruction, ref_json):
 
 if __name__ == "__main__":
     argparse = argparse.ArgumentParser()
-    argparse.add_argument("--j", type=str, default="/home/zxia545/_Code/Research_repo/tony_eval_folder_0811/0904_new_evaluation/refined_dataset/alpaca-llama3-70b-output.json", help="The file to read from")
+    argparse.add_argument("--j", type=str, default="/home/xxxx/_Code/Research_repo/tony_eval_folder_0811/0904_new_evaluation/refined_dataset/alpaca-llama3-70b-output.json", help="The file to read from")
     args = argparse.parse_args()
     file_name = os.path.basename(args.j)
     file_folder = os.path.dirname(args.j)

@@ -23,6 +23,6 @@ def main(input_folder, eval_folder):
         run_evaluation_script(prefix, json_path, eval_folder)
 
 if __name__ == "__main__":
-    input_folder = "/home/zxia545/_Code/Research_repo/tony_eval_folder_0811/0927_all_eval_result/evaluation_folder/mistral-7b-instruct-v0.1"
-    eval_folder = "/home/zxia545/_Code/Research_repo/tony_eval_folder_0811/0927_all_eval_result/evaluation_script"
+    input_folder = "./eval_result/evaluation_folder/mistral-7b-instruct-v0.1"
+    eval_folder = "./eval_folder_0811/0927_all_eval_result/evaluation_script"
     main(input_folder, eval_folder)
