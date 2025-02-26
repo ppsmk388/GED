@@ -285,7 +285,7 @@ The scripts can be easily modified to train LLMs with different datasets.
 ```
 ./instruction-tuning/evaluation/run_infer_main_dist.sh
 ```
-<!-- 
+
 ## 📧 Contact
 
 Contact person: Zhengyu Hu, huzhengyu477@gmail.com
@@ -305,4 +305,4 @@ We're also open to any collaboration!
   journal={arXiv preprint arXiv:2410.12869},
   year={2024}
 }
-``` -->
+```
