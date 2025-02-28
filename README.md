@@ -241,7 +241,7 @@ This script generates denoise the preference graph by  weak evaluators to get th
 ```bash
 ./denoise_instruction.sh \
     --eval_model llama3-8b \
-    --answer_model qwen2-72b \
+    --answer_model qwen1.5-14b \
     --task_name gaia \
     --rank_type pairwise_majority
 ```
