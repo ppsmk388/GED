@@ -177,14 +177,14 @@ This script generates denoise the preference graph by  weak evaluators to select
 
 ```bash
 ./denoise_model_rank.sh \
-    --eval_model llama3-8b \
-    --task_name gaia \
+    --eval_model llama3_70b \
+    --w_type noWeight \
     --rank_type pairwise_majority
 ```
 
 - `--eval_model`: The model used for evaluation.  (Like: 'llama3_70b').
+- `--w_type`: The type of ensemble method used. (Like: 'noWeight').
 - `--rank_type`: The ranking method. (Like: 'pairwise_majority').
-- `--rank_type`: The type of ensemble method used. (Like: 'rank_ensemble').
 
 
 
@@ -243,7 +243,6 @@ This script generates denoise the preference graph by  weak evaluators to get th
     --eval_model llama3-8b \
     --answer_model qwen2-72b \
     --task_name gaia \
-    --w_type noWeight \
     --rank_type pairwise_majority
 ```
 
