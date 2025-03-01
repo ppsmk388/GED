@@ -284,24 +284,3 @@ The scripts can be easily modified to train LLMs with different datasets.
 ```
 ./instruction-tuning/evaluation/run_infer_main_dist.sh
 ```
-
-## 📧 Contact
-
-Contact person: Zhengyu Hu, huzhengyu477@gmail.com
-
-Don't hesitate to send us an e-mail if you have any question.
-
-We're also open to any collaboration!
-
-
-
-## 👆  Citation
-
-```
-@article{hu2024language,
-  title={Language Model Preference Evaluation with Multiple Weak Evaluators},
-  author={Hu, Zhengyu and Zhang, Jieyu and Xiong, Zhihan and Ratner, Alexander and Xiong, Hui and Krishna, Ranjay},
-  journal={arXiv preprint arXiv:2410.12869},
-  year={2024}
-}
-```
