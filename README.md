@@ -1,4 +1,4 @@
-# Language Model Preference Evaluation with Multiple Weak Evaluators
+# Towards Acyclic Preference Evaluation of Language Models via Multiple Evaluators
 
 
 
@@ -284,7 +284,7 @@ The scripts can be easily modified to train LLMs with different datasets.
 ```
 ./instruction-tuning/evaluation/run_infer_main_dist.sh
 ```
-
+<!-- 
 ## 📧 Contact
 
 Contact person: Zhengyu Hu, huzhengyu477@gmail.com
@@ -292,9 +292,9 @@ Contact person: Zhengyu Hu, huzhengyu477@gmail.com
 Don't hesitate to send us an e-mail if you have any question.
 
 We're also open to any collaboration!
+ -->
 
-
-
+<!-- 
 ## 👆  Citation
 
 ```
@@ -304,4 +304,4 @@ We're also open to any collaboration!
   journal={arXiv preprint arXiv:2410.12869},
   year={2024}
 }
-```
+``` -->
