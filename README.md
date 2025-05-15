@@ -11,28 +11,6 @@
 </figcaption>
 
 
-
-## What's GED?
-🧵(1/n) **Model-based evaluators** (e.g., GPT-4) for LLMs’ preference evaluations often introduce **conflicting preferences**, where cyclic patterns emerge in pairwise comparisons, leading to inconsistent rankings and flawed conclusions.
-
-<h1 style="text-align:left">
-    <img src="./images/1.png" style="width: 80%; height: auto;" />
-</h1>
-
-
-🧵(2/n) We visualize these contradictions by modeling them as **preference graphs**, where responses are nodes, and directed edges represent pairwise preferences. Cycles in these graphs (e.g., A > B > C > A) indicate contradictions that undermine the evaluations.
-
-<h1 style="text-align:left">
-    <img src="./images/2.png" style="width: 80%; height: auto;" />
-</h1>
-
-
-🧵(3/n) Our solution: **GED** (Preference Graph Ensemble and Denoise) aggregates multiple weaker LLM evaluations and applies **denoising process** to ensure the final preference graph is a **Directed Acyclic Graph (DAG)**, which guarantees a consistent ranking.
-
-<h1 style="text-align:left">
-    <img src="./images/3.png" style="width: 80%; height: auto;" />
-</h1>
-
 ## 1. Setup
 
 Install all required dependencies to ensure all scripts function correctly.
@@ -93,7 +71,7 @@ Here, `"0"` represents the first question in the GAIA dataset and `gaia_llama3-7
 
 **2.2 Graph denoise**
 
-This script generates denoise the preference graph by  weak evaluators to get the final response ranking.
+This script generates denoise the preference graph by  single evaluators to get the final response ranking.
 
 ```bash
 ./denoise_response.sh \
@@ -173,7 +151,7 @@ Here, `"0"` represents the first question in AlpacaEval, and `Qwen1.5-72B-Chat` 
 **3.2 Graph denoise**
 
 
-This script generates denoise the preference graph by  weak evaluators to select the final tuning data.
+This script generates denoise the preference graph by  single evaluators to select the final tuning data.
 
 ```bash
 ./denoise_model_rank.sh \
@@ -193,7 +171,7 @@ This script generates denoise the preference graph by  weak evaluators to select
 
 **3.3 Result Evaluation**
 
-This script generates denoise the preference graph by  weak evaluators to select the final tuning data.
+This script generates denoise the preference graph by  single evaluators to select the final tuning data.
 
 ```bash
 ./model-rank/evaluation/eval_model_rank.sh
@@ -236,7 +214,7 @@ The generated preference graph is similar to the one in **2.1 Raw Preference Gra
 **4.2 Graph denoise**
 
 
-This script generates denoise the preference graph by  weak evaluators to get the final response ranking.
+This script generates denoise the preference graph by  single evaluators to get the final response ranking.
 
 ```bash
 ./denoise_instruction.sh \
