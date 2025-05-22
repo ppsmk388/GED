@@ -21,7 +21,7 @@ conda env create -f environment.yml -n GED
 
 ## 2. Response Selection Setting
 
-**2.1 Raw preference garph generation**
+**2.1 Raw preference graph generation**
 
 You can use the following script to generate responses for tasks such as HumanEval, AlpacaEval, MATH, GSM8k, and GAIA:
 
@@ -100,7 +100,7 @@ Use the scripts in the following folder to test the final results:
 ## 3. Model Ranking Setting
 
 
-**3.1 Raw preference garph generation**
+**3.1 Raw preference graph generation**
 
 Download the answers of 30 models from the ./evaluation/model-rank/model_rank_config.py file in the [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) project .
 
@@ -180,7 +180,7 @@ This script generates denoise the preference graph by  single evaluators to sele
 
 ## 4. Instruction tuning setting
 
-**4.1 Raw preference garph generation**
+**4.1 Raw preference graph generation**
 
 
 You can use the following script to generate responses for `UltraFeedback`:
